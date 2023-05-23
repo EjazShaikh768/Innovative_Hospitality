@@ -1,0 +1,319 @@
+.body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+}
+
+#header {
+  background: #fff;
+  box-shadow: 2px 2px 2px 2.5px #ddd;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+#header ul li>a {
+  font-weight: 550;
+  margin-left: 20px;
+  color: #4d4a4a;
+}
+
+#header ul li>a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+#header img {
+  width: 270px;
+  height: 72px;
+}
+
+#carouselDiv img {
+  height: 600px;
+}
+
+#serviceCard .serviceimg {
+  width: 100%;
+  height: 260px;
+}
+
+#serviceCard .serviceimg img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+#serviceCard .serviceimg img:hover {
+  transform: scale(20deg);
+}
+
+#serviceCard .serviceimg p {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  z-index: 2;
+  margin-top: -50px;
+  color: #fff;
+}
+
+#HomeBio .paraTitle {
+  text-transform: uppercase;
+  margin-top: 20px;
+  word-spacing: 3px;
+}
+
+.redTitle {
+  color: #dd3333;
+  font-weight: 500;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: 'Marcellus', serif;
+}
+
+#HomeBio p {
+  text-transform: capitalize;
+  word-spacing: 3px;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: Open Sans;
+  font-style: 400;
+}
+
+#bg-lights {
+  background: #f7f7f7 !important;
+}
+
+#bg-lights h2 {
+  color: #000000;
+}
+
+#bg-lights .desc {
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: end;
+}
+
+#bg-lights p {
+  font-size: 17.5px;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.swiper-slide img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.swiper-slide h4 {
+  font-weight: 600;
+  color: #000000;
+}
+
+.swiper-slide .testi-title {
+  color: #3f3933;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: karla;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.swiper-slide .testi-label {
+  color: #dd3333;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: karla;
+  margin-bottom: 50px;
+}
+
+#clients {
+  background: #fff;
+}
+
+#clients .clientimg img {
+  width: 100%;
+  text-align: center;
+}
+
+#clients .checkbox .fa-check {
+  color: #dd3333;
+  font-weight: 700;
+}
+#clients .checkbox{
+  padding: 20px;
+}
+#clients .checkbox .checkbox-title {
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 20px 0 13px 0; 
+
+}
+#clients .checkbox p {
+  font-size: 17px;
+  line-height: 28px;
+    color: #6a6560;
+  font-weight: 400;
+}
+
+#clients .servic-text h3{
+  color: #6a6560;
+}
+#clients .servic-text h6{
+  color: #6a6560;
+  font-weight: 700;
+  margin: 10px 0;
+}
+#clients .servic-text p {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #131212;
+}
+#accordionFlushExample h2 button{
+  color: #dd3333;
+  font-size: 0.8em;
+}
+#banner {
+  background-image: url('../Images/bgimage.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0 10% 0;
+}
+#banner .greentitle {
+  font-size: 26px;
+  color: #eded00;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#banner p {
+  font-family: Open Sans;
+    font-style: 400;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+#banner a {
+  text-decoration: none;
+  display: inline-block;
+  background: #2d2a27;
+  border: none;
+  padding: 0px 50px;
+  font-weight: 600;
+  line-height: 55px;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#cardsSection {
+  
+  font-family: 'Marcellus', serif;
+}
+#cardsSection .card {
+  box-shadow: 2px 1.5px 1.5px 1.5px #ddd;
+  position: relative;
+  height: 350px;
+  background: #807b76;
+  margin-top: 20px;
+}
+#cardsSection .card a{
+text-decoration: none;
+margin-left: 20px;
+margin-bottom: 15px;
+font-size: 1.1em;
+color: #fff;
+}
+#cardsSection .card h2 {
+  font-weight: 600;
+  margin-left: 20px;
+  color: #fff;
+}
+#cardsSection .card .bottom p a {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+
+}  
+#cardsSection .card   .bottom{
+  position: absolute;
+  bottom: 25px;
+  left: 38px;
+  color: #fff;  
+}
+#cardsSection .card:hover{
+  background-image: url('../Images/caresouel-img1.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+}
+.zooming{
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+.zooming img {
+  width: 100%;
+  height: 100%;
+}
+.zooming img:hover{
+  transform: scale(1.1);
+  transition: all ease-in-out 1s;
+}
+.specialOffers .specialOfferscard{
+  box-shadow: 2px 1.5px 1.5px 1.5px #ddd;
+}
+.specialOffers .content{
+  position: relative;
+  height: 270px;
+}
+.specialOffers .content h2 {
+  color: #000000;
+  font-weight: 450;
+
+}
+.specialOffers .content p {
+  width: 80px;
+  height: max-content;
+  background-color: #dd3333;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
