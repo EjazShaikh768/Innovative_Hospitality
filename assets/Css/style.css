@@ -7,27 +7,257 @@
   color: #333333;
 }
 
-#header {
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  color: #000;
+}
+
+nav ul li .nav-link {
+  color: #000;
+}
+
+nav a {
+  display: block;
+  color: #000;
+  font-size: 1em;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+nav ul li ul li:hover {
+  background: #f4f4f4;
+}
+
+/* nav a:hover { background-color: #e7dfdf; } */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: max-content;
+  background-color: #fff;
+  color: #000;
+}
+
+nav .submenu {
   background: #fff;
-  box-shadow: 2px 2px 2px 2.5px #ddd;
-  box-sizing: border-box;
-  padding: 10px 0;
 }
 
-#header ul li>a {
-  font-weight: 550;
-  margin-left: 20px;
-  color: #4d4a4a;
+nav .menu {}
+
+nav ul li:hover>ul {
+  display: inherit;
 }
 
-#header ul li>a:hover {
-  text-decoration: underline;
-  color: #000000;
+nav ul ul li {
+  width: 300px;
+  float: none;
+  font-size: 1em;
+  display: list-item;
+  position: relative;
+  background: #fff;
+  padding: 10px 20px;
+  color: #000;
+}
+
+nav ul ul li a {
+  color: #000;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li>a:after {
+  content: ' ';
+}
+
+li>a:only-child:after {
+  content: '';
+}
+
+
+/* Media Queries
+ --------------------------------------------- */
+
+@media all and (max-width : 600px) {
+
+  nav ul li {
+    background-color: #fff;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+
+  /* #logo {
+   display: block;
+   padding: 0;
+   width: 100%;
+   text-align: center;
+   float: none;
+ } */
+
+  nav {
+    margin: 0;
+  }
+
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  nav ul li ul li:hover {
+    background: #f4f4f4;
+  }
+
+  .toggle {
+    display: block;
+    background-color: #ffffff;
+    padding: 0 20px;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    text-decoration: none;
+    border: none;
+  }
+
+  .toggle:hover {
+    background-color: #ffffff;
+  }
+
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    width: max-content;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 10px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 10px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #ffffff;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #ffffff;
+  }
+
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #000;
+  }
+
+  nav ul .firstul {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  nav ul ul li {
+    display: block;
+    width: max-content;
+    background-color: #fff;
+  }
+
+  nav ul ul ul li {
+    position: static;
+
+  }
+}
+
+@media all and (max-width : 330px) {
+
+  nav ul li {
+    display: block;
+    width: 94%;
+    margin-top: 0;
+  }
+
+}
+
+#header {
+  background-color: #fff;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 16px 4px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  transition: all 0.5s ease-in-out 0s;
+  top: 0px;
 }
 
 #header img {
-  width: 270px;
-  height: 72px;
+  height: 70px;
+  width: 196px;
+  max-width: 100%;
+}
+
+/* 
+ #navbar {
+   background-color: #fff;
+   color: #fff;
+ }*/
+.navbar-collapse {
+  /* background: linear-gradient(rgb(230, 128, 10) ,rgb(213, 120, 7) ); */
+  background: #fff;
+
 }
 
 #carouselDiv img {
@@ -160,9 +390,11 @@
   color: #dd3333;
   font-weight: 700;
 }
-#clients .checkbox{
+
+#clients .checkbox {
   padding: 20px;
 }
+
 #clients .checkbox .checkbox-title {
   text-align: center;
   color: #000;
@@ -170,33 +402,38 @@
   font-weight: 400;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 20px 0 13px 0; 
+  margin: 20px 0 13px 0;
 
 }
+
 #clients .checkbox p {
   font-size: 17px;
   line-height: 28px;
-    color: #6a6560;
+  color: #6a6560;
   font-weight: 400;
 }
 
-#clients .servic-text h3{
+#clients .servic-text h3 {
   color: #6a6560;
 }
-#clients .servic-text h6{
+
+#clients .servic-text h6 {
   color: #6a6560;
   font-weight: 700;
   margin: 10px 0;
 }
+
 #clients .servic-text p {
   font-size: 18px;
   margin: 15px 0;
   color: #131212;
 }
-#accordionFlushExample h2 button{
+
+#accordionFlushExample h2 button {
   color: #dd3333;
   font-size: 0.8em;
 }
+
 #banner {
   background-image: url('../Images/bgimage.webp');
   background-repeat: no-repeat;
@@ -204,6 +441,7 @@
   background-size: cover;
   padding: 10% 0 10% 0;
 }
+
 #banner .greentitle {
   font-size: 26px;
   color: #eded00;
@@ -212,16 +450,18 @@
   margin-bottom: 40px;
   text-align: center;
 }
+
 #banner p {
   font-family: Open Sans;
-    font-style: 400;
-    text-decoration: none;
-    text-transform: none;
-    font-size: 1em;
-    line-height: 1.5;
-    color: #fff;
-    text-align: center;
+  font-style: 400;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
 }
+
 #banner a {
   text-decoration: none;
   display: inline-block;
@@ -239,10 +479,12 @@
   letter-spacing: 1px;
   text-align: center;
 }
+
 #cardsSection {
-  
+
   font-family: 'Marcellus', serif;
 }
+
 #cardsSection .card {
   box-shadow: 2px 1.5px 1.5px 1.5px #ddd;
   position: relative;
@@ -250,63 +492,75 @@
   background: #807b76;
   margin-top: 20px;
 }
-#cardsSection .card a{
-text-decoration: none;
-margin-left: 20px;
-margin-bottom: 15px;
-font-size: 1.1em;
-color: #fff;
+
+#cardsSection .card a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #fff;
 }
+
 #cardsSection .card h2 {
   font-weight: 600;
   margin-left: 20px;
   color: #fff;
 }
+
 #cardsSection .card .bottom p a {
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
 
-}  
-#cardsSection .card   .bottom{
+}
+
+#cardsSection .card .bottom {
   position: absolute;
   bottom: 25px;
   left: 38px;
-  color: #fff;  
+  color: #fff;
 }
-#cardsSection .card:hover{
+
+#cardsSection .card:hover {
   background-image: url('../Images/caresouel-img1.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(50%);
 }
-.zooming{
+
+.zooming {
   width: 100%;
   height: 270px;
   overflow: hidden;
 }
+
 .zooming img {
   width: 100%;
   height: 100%;
 }
-.zooming img:hover{
+
+.zooming img:hover {
   transform: scale(1.1);
   transition: all ease-in-out 1s;
 }
-.specialOffers .specialOfferscard{
+
+.specialOffers .specialOfferscard {
   box-shadow: 2px 1.5px 1.5px 1.5px #ddd;
 }
-.specialOffers .content{
+
+.specialOffers .content {
   position: relative;
   height: 270px;
 }
+
 .specialOffers .content h2 {
   color: #000000;
   font-weight: 450;
 
 }
+
 .specialOffers .content p {
   width: 80px;
   height: max-content;
@@ -316,4 +570,70 @@ color: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+
+.breadcamp {
+  background-image: url('../Images/breadcampImg.webp');
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 400px;
+  justify-content: center;
+  filter: brightness(60%);
+  object-fit: cover;
+
+}
+
+.breadcamp .breadcampcontent {
+  margin-top: 15%;
+  justify-content: center;
+  filter: brightness(10%);
+  color: #fff;
+}
+
+.breadcamp .breadcampcontent h1 {
+  color: #fff;
+}
+
+#whyus .whyusContent .redTitle p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#whyus .whyusContent h5 {
+  font-weight: 700;
+  color: #6a6560;
+  margin-bottom: 20px;
+}
+
+#whyus ul li {
+  list-style: none;
+}
+
+#contactus a {
+  text-decoration: none;
+  color: #dd3333;
+  font-size: 20px;
+}
+
+#contactus span {
+  font-weight: 700;
+  color: #6a6560;
+  font-size: 24px;
+}
+
+#contactus h2 {
+  color: #6a6560;
+  margin-top: 15px;
+}
+
+#contactus h4 {
+  color: #6a6560;
+  margin-top: 15px;
+}
+
+#contactus p {
+  color: #6a6560;
+  margin-top: 15px;
+  font-weight: 600;
 }
