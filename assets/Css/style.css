@@ -283,10 +283,216 @@ li>a:only-child:after {
 #serviceCard .serviceimg p {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
+  font-size: 19px;
+  font-weight: 680;
   z-index: 2;
   margin-top: -50px;
   color: #fff;
+}
+
+@media only screen and (max-width:767px){
+  #serviceCard .serviceimg {
+    width: 100%;
+    height: 260px;
+    margin-top: 15px;
+  }
+  #HomeBio .redTitle {
+    color: #dd3333;
+    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0;
+    font-family: 'Marcellus', serif;
+  }
+  
+  #HomeBio p {
+    text-transform: capitalize;
+    word-spacing: 3px;
+    line-height: 1.7;
+    font-family: Open Sans;
+    font-style: 400;
+    text-align: justify;
+    font-size: 17px;
+  }
+  #bg-lights h2 {
+    color: #000000;
+    text-align: center;
+  }
+  
+  #bg-lights .desc {
+    font-size: 19px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  
+  #bg-lights p {
+    text-transform: capitalize;
+    word-spacing: 3px;
+    line-height: 1.7;
+    font-family: Open Sans;
+    font-style: 400;
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  .whatcustomer .redTitle{
+    color: #dd3333;
+    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0;
+    font-family: 'Marcellus', serif;
+    
+  }
+  .swipper h4 {
+    font-size: 18px;
+  }
+  .staywithus .redTitle{
+    color: #dd3333;
+    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0;
+    font-family: 'Marcellus', serif;
+
+  }
+  .staywithus p {
+    text-transform: capitalize;
+    word-spacing: 3px;
+    line-height: 1.7;
+    font-family: Open Sans;
+    font-style: 400;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  .staywithus .checkbox .checkbox-title {
+    font-size: 20px;
+  }
+  #clients .servic-text h3 {
+    color: #6a6560;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #clients .servic-text h6 {
+    color: #6a6560;
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 17.5px;
+  }
+  
+  #clients .servic-text p {
+    text-transform: capitalize;
+    word-spacing: 3px;
+    line-height: 1.7;
+    font-family: Open Sans;
+    font-style: 400;
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  #accordion h4  {
+    text-align: center;
+    font-size: 20px;
+  }
+  #accordionFlushExample h2 button {
+    color: #dd3333;
+    font-size: 19px;
+  }
+  #accordionFlushExample .accordion-body{
+    text-transform: capitalize;
+    word-spacing: 3px;
+    line-height: 1.7;
+    font-family: Open Sans;
+    font-style: 400;
+    text-align: justify;
+    font-size: 17px;
+
+  }
+  
+#banner .greentitle {
+  font-size: 20px;
+  color: #eded00;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#banner p {
+  font-family: Open Sans;
+  font-style: 400;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+}
+
+#banner a {
+  text-decoration: none;
+  display: inline-block;
+  background: #2d2a27;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#cardsSection .card {
+  box-shadow: 2px 1.5px 1.5px 1.5px #ddd;
+  position: relative;
+  height: 450px;
+  background: #807b76;
+  margin-top: 20px;
+}
+
+#cardsSection .card a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+#cardsSection .card h2 {
+  font-weight: 600;
+  margin-left: 20px;
+  color: #fff;
+}
+
+#cardsSection .card .bottom p a {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+#cardsSection .card .bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 38px;
+  color: #fff;
+}
+
+#cardsSection .card:hover {
+  background-image: url('../Images/caresouel-img1.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(70%);
+}
+.bg-dark p {
+  font-size: 20px;
+}
 }
 
 #HomeBio .paraTitle {
@@ -309,9 +515,10 @@ li>a:only-child:after {
   text-transform: capitalize;
   word-spacing: 3px;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 19px;
   font-family: Open Sans;
   font-style: 400;
+
 }
 
 #bg-lights {
@@ -435,7 +642,7 @@ li>a:only-child:after {
 }
 
 #banner {
-  background-image: url('../Images/bgimage.webp');
+  background:linear-gradient(rgba(0, 0, 0,0.4),rgba(0, 0, 0,0.6)),url('../Images/bgimage.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -489,7 +696,7 @@ li>a:only-child:after {
   box-shadow: 2px 1.5px 1.5px 1.5px #ddd;
   position: relative;
   height: 350px;
-  background: #807b76;
+  background: #3f3d3b;
   margin-top: 20px;
 }
 
@@ -527,7 +734,8 @@ li>a:only-child:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%);
+  filter: brightness(70%);
+  color: #fff;
 }
 
 .zooming {
@@ -595,6 +803,48 @@ li>a:only-child:after {
   color: #fff;
 }
 
+@media only screen and (max-width:767px) {
+  .breadcamp {
+    background-image: url('../Images/breadcampImg.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
+    justify-content: center;
+    filter: brightness(60%);
+    object-fit: cover;
+    color: #fff;
+  
+  }
+  
+  .breadcamp .breadcampcontent {
+    margin-top: 50%;
+    justify-content: center;
+    filter: brightness(10%);
+    color: #fff;
+  }
+  .breadcamp .breadcampcontent p a {
+    color: #fff;
+  }
+  .breadcamp .breadcampcontent h1 {
+    color: #fff;
+  }
+  #whyus .whyusContent .redTitle p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+  
+  #whyus .whyusContent h5 {
+    font-weight: 700;
+    color: #6a6560;
+    margin-bottom: 20px;
+  }
+  
+  #whyus ul li {
+    list-style: none;
+    text-align: center;
+  }
+}
 #whyus .whyusContent .redTitle p {
   font-size: 20px;
   font-weight: 200;
@@ -636,4 +886,28 @@ li>a:only-child:after {
   color: #6a6560;
   margin-top: 15px;
   font-weight: 600;
+}
+@media only screen and (max-width:767px) {
+  
+#contactus h2 {
+  color: #6a6560;
+  margin: 15px 0;
+}
+
+#contactus h4 {
+  color: #6a6560;
+  margin-top: 15px;
+}
+#contactus h3 {
+  color: #6a6560;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#contactus p {
+  color: #6a6560;
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: justify;
+}
 }

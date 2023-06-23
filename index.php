@@ -23,63 +23,9 @@
         <title>Innovative Hospitality</title>
     </head>
     <body>
+        
+<?php require('header.php'); ?>
 
-        <section id="header">
-            <nav class="navbar navbar-expand-md ">
-                <div class="container">
-                    <img src="assets/Images/logo.webp" alt class="img-fluid">
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    SERVICED APARTMENTS
-                                </a>
-                                <ul class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="hinjewadi.html">Hinjewadi</a></li>
-                                   
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="corporate.html"
-                                    tabindex="-1" aria-disabled="true">CORPORATE MANAGED RESIDENCE</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    ABOUT
-                                </a>
-                                <ul class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="company-overview.html">Company Overview</a></li>
-                                    <li><a class="dropdown-item" href="whyus.html">Why Us</a></li>
-                                    <li><a class="dropdown-item" href="aboutus.html">Vission Mission</a></li>
-                                    <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
-                                   
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
 
         <section id="carouselDiv">
             <div id="carouselExampleCaptions" class="carousel slide"
@@ -210,7 +156,7 @@
         <section id="bg-lights">
             <div class="container py-5">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-3 text-end">
+                    <div class="col-sm-12 col-md-3 text-lg-end">
                         <h2>Looking Corporate Stays ? </h2>
                         <div class="desc">" We Live Innovative Service Apartment is a popular for Business travelers and Corporate long stays in Pune? "</div>
                     </div>
@@ -252,7 +198,7 @@
                         <p></p>
                     </div>
                 </div>
-                <div class="row justify-content-center my-5">
+                <div class="row justify-content-center my-5 whatcustomer">
                     <div class="col-sm-12 col-md-6 text-center">
                         <div class="redTitle"> What our customers says about Us
                         </div>
@@ -317,26 +263,26 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-10">
                         <div class="row clientimg mb-5">
-                            <div class="col-4 col-md-3">
+                            <div class="col-6 col-md-3">
                                 <img src="assets//Images/clinet-img1.webp" alt
                                     srcset class="img-fluid">
                             </div>
-                            <div class="col-4 col-md-3">
+                            <div class="col-6 col-md-3">
                                 <img src="assets//Images/clinet-img2.webp" alt
                                     srcset class="img-fluid">
                             </div>
-                            <div class="col-4 col-md-3">
+                            <div class="col-6 col-md-3">
                                 <img src="assets//Images/clinet-img3.webp" alt
                                     srcset class="img-fluid">
                             </div>
-                            <div class="col-4 col-md-3">
+                            <div class="col-6 col-md-3">
                                 <img src="assets//Images/clinet-img4.webp" alt
                                     srcset class="img-fluid">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-10 text-center my-5">
+                    <div class="col-sm-12 col-md-10 text-center my-5 staywithus">
                         <div class="redTitle"> Why Stay with Us?</div>
                         <p>Live Innovative Service Apartments is a finest
                             company in Pune for Corporate long stays.</p>
@@ -432,7 +378,7 @@
                             expectations.
                         </p>
                     </div>
-                    <div class="col-12 col-md-10">
+                    <div class="col-12 col-md-10" id="accordion">
                         <h4><b>FAQs About Service Apartments in Pune.</b></h4>
 
                         <div class=" my-5 accordion accordion-flush"
@@ -572,12 +518,12 @@
         <section id="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 col-md-6 px-5 text-center ">
+                    <div class="col-12 col-md-6 px-5 text-center ">
                         <p>With bespoke services and rejuvenate hospitality</p>
                         <div class="greentitle"> NEW DIMENSIONS OF HOME AWAY
                             FROM HOME & CATERS TO ALL NEEDS OF A BUSINESS
                             TRAVELER</div>
-                        <a href>Explore our Service Apartments</a>
+                        <a href="">Explore our Service Apartments</a>
                     </div>
                 </div>
             </div>
@@ -593,7 +539,7 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-sm-12 col-md-6 p-5">
-                                <div class="card p-5">
+                                <div class="card p-3">
                                     <div class="overlay"></div>
                                     <div class="d-flex">
                                         <a href>Corporate Guest Houses</a>
@@ -608,7 +554,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 p-5">
-                                <div class="card p-5">
+                                <div class="card p-3">
                                     <div class="overlay"></div>
                                     <div class="d-flex">
                                         <a href>Corporate Guest Houses</a>
@@ -624,7 +570,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 p-5">
-                                <div class="card p-5">
+                                <div class="card p-3">
                                     <div class="overlay"></div>
                                     <div class="d-flex">
                                         <a href>Corporate Guest Houses</a>
@@ -639,7 +585,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 p-5">
-                                <div class="card p-5">
+                                <div class="card p-3">
                                     <div class="overlay"></div>
                                     <div class="d-flex">
                                         <a href>Corporate Guest Houses</a>
@@ -654,7 +600,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 p-5">
-                                <div class="card p-5">
+                                <div class="card p-3">
                                     <div class="overlay"></div>
                                     <div class="d-flex">
                                         <a href>Corporate Guest Houses</a>
@@ -670,7 +616,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 p-5">
-                                <div class="card p-5">
+                                <div class="card p-3">
                                     <div class="overlay"></div>
                                     <div class="d-flex">
                                         <a href>Corporate Guest Houses</a>
@@ -743,44 +689,7 @@
             </div>
         </section>
 
-        <section class="bg-dark">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-12 text-center">
-                        <p class="text-info">
-                            Live Innovative is a corporate stay solutions
-                            company in Pune. Live Innovative are expert to
-                            providing Serviced Apartments, Corporate Guest
-                            Houses, Guest House Management Services and
-                            Corporate Managed Residences in Pune
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container-fluid bg-black">
-                <div class="row">
-                    <div class="col-12 py-4 text-center">
-                        <h6 class="text-white"><b>Copyright © 2023 Live Innovative | All Rights Reserved.</b></h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src="assets/Bootstrap/bootstrap.bundle.js"></script>
-
-        <script src="assets/FontAwesome/all.min.js"></script>
-
-        <script src="assets/JavaScript/Javascript.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-        <script src="https://code.jquery.com/jquery-3.7.0.js"
-            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-            crossorigin="anonymous"></script>
-    </body>
-</html>
+        <?php require('footer.php'); ?>
 
 <!-- Initialize Swiper -->
 <script>

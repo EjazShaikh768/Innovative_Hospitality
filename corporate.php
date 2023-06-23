@@ -24,69 +24,15 @@
     </head>
     <body>
 
-        <!-- header start  -->
 
-        <section id="header">
-            <nav class="navbar navbar-expand-md ">
-                <div class="container">
-                    <img src="assets/Images/logo.webp" alt class="img-fluid">
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    SERVICED APARTMENTS
-                                </a>
-                                <ul class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="hinjewadi.html">Hinjewadi</a></li>
-                                   
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="corporate.html"
-                                    tabindex="-1" aria-disabled="true">CORPORATE MANAGED RESIDENCE</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    ABOUT
-                                </a>
-                                <ul class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="company-overview.html">Company Overview</a></li>
-                                    <li><a class="dropdown-item" href="whyus.html">Why Us</a></li>
-                                    <li><a class="dropdown-item" href="aboutus.html">Vission Mission</a></li>
-                                    <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
-                                   
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
+        
+    <?php require('header.php'); ?>
+
 
         <section>
             <div class="container-fluid breadcamp">
                 <div class="row justify-content-center">
-                    <div class="col-6 breadcampcontent text-center">
+                    <div class="col-12 col-md-6 breadcampcontent text-center">
                         <p><a href>Home |</a> <b> / Corporate Managed Residence</b></p>
                         <h1 class="text-white">Corporate Managed Residence</h1>
                     </div>
@@ -167,42 +113,5 @@
             </div>
         </section>
 
-        <section class="bg-dark">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-12 text-center">
-                        <p class="text-info">
-                            Live Innovative is a corporate stay solutions
-                            company in Pune. Live Innovative are expert to
-                            providing Serviced Apartments, Corporate Guest
-                            Houses, Guest House Management Services and
-                            Corporate Managed Residences in Pune
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container-fluid bg-black">
-                <div class="row">
-                    <div class="col-12 py-4 text-center">
-                        <h6 class="text-white"><b>Copyright © 2023 Live
-                                Innovative | All Rights Reserved.</b></h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src="assets/Bootstrap/bootstrap.bundle.js"></script>
-
-        <script src="assets/FontAwesome/all.min.js"></script>
-
-        <script src="assets/JavaScript/Javascript.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-        <script src="https://code.jquery.com/jquery-3.7.0.js"
-            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-            crossorigin="anonymous"></script>
-    </body>
-</html>
+     
+        <?php require('footer.php'); ?>
